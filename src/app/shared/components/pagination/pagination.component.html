@@ -1,0 +1,5 @@
+<ul class="pagination justify-content-end">
+  <li class="page-item" [ngClass]="{'disabled prevent-click':counter<=0}"(click)="onClickDecreasePaginationCounter($event)"><a class="page-link  prevent-click" href="#">Previous</a></li>
+  <li class="page-item" (click)="onClickIncreasePaginationCounter($event)"><a class="page-link prevent-click" 
+    href="#">Next</a></li>
+</ul>

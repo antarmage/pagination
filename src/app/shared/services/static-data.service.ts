@@ -16,7 +16,6 @@ export class StaticDataService {
   }
   updatePostData(data){
     let currentPostDataList = this.postListSub.getValue();
-    console.log(currentPostDataList[currentPostDataList.length-1].id);
     data.id = Number(currentPostDataList[currentPostDataList.length-1].id ) + 1;
     currentPostDataList.push(data);
     this.postListSub.next(currentPostDataList);
